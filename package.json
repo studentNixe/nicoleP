@@ -1,0 +1,10 @@
+{
+  "name": "hausaufgabe",
+  "scripts": {
+    "start": "node indeks.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.3"
+  }
+}
