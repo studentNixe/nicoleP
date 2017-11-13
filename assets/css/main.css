@@ -1,18 +1,23 @@
 body{
    background:#dedede; 
+   margin: 0px;
+   padding: 0px;
 }
 
-#header-title {
+#top {
+	margin: 0px;
+    padding: 0px;
 	background: #ffffff;
 }
 
-#header-title svg{
+#top-title svg{
 	float:left;
+	display:block;
 }
 
-#header img{
+img{
 	display: block;
 	max-width: 600px;
 	margin-left: auto;
-       margin-right: auto;
+    margin-right: auto;
 }
