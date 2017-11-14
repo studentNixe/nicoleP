@@ -1,23 +1,72 @@
 body{
-   background:#dedede; 
    margin: 0px;
    padding: 0px;
+   font-family:  Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+   background: #05090e;
+   color: #506070;
 }
 
 #top {
 	margin: 0px;
-    padding: 0px;
-	background: #ffffff;
+    	padding: 0px;
 }
 
-#top-title svg{
+div {
+margin: 0px;
+padding: 0px;
+}
+
+#top div{
 	float:left;
-	display:block;
+}
+
+svg{
+	width: 100%;
+	height: auto;
+}
+
+#logo{
+	width: 180px;
+}
+
+.content{
+	clear:both;
+	background: #05090e;
+}
+
+.brighttheme{
+	background: #dedede;
+	color: #05090e;
+	padding: 15px;
+}
+.container{
+	position: relative;
+	text-align: center;
+}
+.container-abs{
+	position: absolute;
+	top: 0px;
 }
 
 img{
-	display: block;
-	max-width: 600px;
+	max-width: 450px;
 	margin-left: auto;
-    margin-right: auto;
+    	margin-right: auto;
+}
+table{
+margin:0 auto;
+border-radius: 1em;
+}
+
+td{
+ padding: 0px 15px;
+ vertical-align: top;
+}
+
+tr td:first-child{
+	font-size: 150%;
+}
+
+.shadow{
+	box-shadow:0 2px 5px 0 rgba(5,9,14,0.5),0 2px 10px 0 rgba(5,9,14,0.6);
 }
