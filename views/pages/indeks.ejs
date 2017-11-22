@@ -7,74 +7,91 @@
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-    <div id="top" class="left">
-           <div id="logo"><% include ../partials/nplogo %></div>
-           <div><h4>IT student - Nicole P.</h4></div>
-       </div>
-   </div>
-	<div class="brighttheme clearfix left">
-	<div id="menue" class="left">
-	<div class="shadow buttn"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></div>
-	<div class="shadow buttn"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
-	<div class="shadow buttn"><a href="#"><i class="fa fa-terminal" aria-hidden="true"></i></a></div>
-	<div class="shadow buttn"><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i></a></div>
+	<div id="top" class="left">
+        <div id="logo"><% include ../partials/nplogo %></div>
+        <div><h4>IT student - Nicole P.</h4></div>
+    </div>
+   	<div class="brighttheme clearfix left">
+		<div id="menue" class="left">
+			<div class="shadow buttn"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></div>
+			<div class="shadow buttn"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
+			<div class="shadow buttn"><a href="#"><i class="fa fa-terminal" aria-hidden="true"></i></a></div>
+			<div class="shadow buttn"><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i></a></div>
+		</div>
+		<div id="profile">
+			<div class="shadow">
+				<div id="myPic"><% include ../partials/profilePic %></div>
+				<h2>Welcome, my name is Nicole!</h2>
+				<p class="mini">IT student</p>
+				<hr>
+				<p>One of my great passions is to experience the world of IT.</p>
+			</div>
+			<p>
+				<span><i class="fa fa-cogs" aria-hidden="true"></i></span>
+				<strong> This website is still in the stage of development.</strong>
+			</p>
+		</div>
+		<div>
+			<table class="shadow">
+				<tr>
+					<th></th><th>Profile</th>
+				</tr>
+				<tr>
+					<td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+					<td>IT student (Bachelor)</td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-home" aria-hidden="true"></i></td>
+					<td>Bremen, Germany</td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-envelope-o" aria-hidden="true"></i></td>
+					<td><a href="mailto:mail.nicole.p.it@protonmail.com">mail.nicole.p.it@protonmail.com</a></td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-id-card-o" aria-hidden="true"></i></td>
+					<td>German</td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-venus" aria-hidden="true"></i></td>
+					<td>female</td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-globe" aria-hidden="true"></i></td>
+					<td>German, English, Polish, French, Russian</td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-paint-brush" aria-hidden="true"></i></td>
+					<td>creative, cheerful, curious</td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
+					<td>fighting, fitness, dancing, drawing</td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-wrench" aria-hidden="true"></i></td>
+					<td>project family tree,</br>internship Daimler Bremen(Projectmanagement),</br>learning Chinese</td>
+				</tr>
+			</table>
+		</div>
 	</div>
-	<div id="profile">
-	   <h2>Welcome dear visitor!</h2>
-	   <p>My name is Nicole and one of my great passions is to experience the world of IT.</p>
-	   <p><span><i class="fa fa-cogs" aria-hidden="true"></i></span>
-	   <strong> This website is still in the stage of development.</strong></p>
-	   <% include ../partials/profilePic %>
-	</div>
-	<div>
-      <table class="shadow">
-	  	<tr><th></th><th>Profile</th></tr>
-	    <tr>
-	       <td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
-	       <td>IT student (Bachelor)</td>
-	    </tr>
-	    <tr>
-	       <td><i class="fa fa-envelope-o" aria-hidden="true"></i></td>
-	       <td>mail.nicole.p.it@protonmail.com</td>
-	    </tr>
-		<tr>
-	       <td><i class="fa fa-id-card-o" aria-hidden="true"></i></td>
-	       <td>German</td>
-	    </tr>
-		<tr>
-	       <td><i class="fa fa-globe" aria-hidden="true"></i></td>
-	       <td>German, English, Polish, French, Russian</td>
-	    </tr>
-		<tr>
-	       <td><i class="fa fa-venus" aria-hidden="true"></i></td>
-	       <td>female</td>
-	    </tr>
-	    <tr>
-	       <td><i class="fa fa-paint-brush" aria-hidden="true"></i></td>
-	       <td>creative, cheerful, curious</td>
-	    </tr>
-		<tr>
-	       <td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
-	       <td>fighting, fitness, dancing, drawing</td>
-	    </tr>
-		<tr>
-	       <td><i class="fa fa-wrench" aria-hidden="true"></i></td>
-	       <td>project family tree,</br>internship Daimler Bremen(Projectmanagement),</br>learning Chinese</td>
-	    </tr>
-      </table>
-	  </div>
-</div>
-  	  <div class="container clearfix">
+  	<div class="container clearfix">
 		<img src="img/2017cebit.jpg" alt="2017cebit" width="100%" height="auto"/>
 		<div class="container-abs">
 			<h2>Motivation</h2>
-      		<p>As the female representation in the IT world needed some increase, I thought it'd be nice to make some contribution to the universe and I started studying IT. Soon I found out, that it definitly was not the worst idea. I learned to fight with frameworks like Apache Cocoon or JSF and finally produced quick solutions with node.js and docker. The jungle of solutions has a very wide range and I am happy to take part in more IT-adventures. If you have some exciting challenge, do not hesitate to tell me about it! I love learning and I am looking forward to some new challenges.</p>
+      		<p>As the female representation in the IT world needed some increase, I thought it'd be nice to make some contribution to the universe and I started studying IT. Soon I found out, that it definitly was not the worst idea and wondered why I did not find out about it earlier (this is the short version of the story).</p> 
+			<p>I learned to fight with frameworks like Apache Cocoon and finally produced quick solutions with node.js and docker. The jungle of solutions has a very wide range and I am happy to take part in more IT-adventures. If you have some exciting challenge, do not hesitate to tell me about it! I love learning and I am looking forward to some new challenges.</p>
 			<p>Not only the different, interesting IT fields, which drew my intention, motivate my work, but the people, who fill the IT world with life. Therefore I would like to thank all IT role models, especially my friends and university teachers, plus event organisers. Additonally I would like to give thanks to the authors of fruitful books and websites, as well as to the producers of educating or problem solving videos.</br>Great thanks!!!</p>
-	  	<h4>With kind regards,</br>
-	  Nicole P.
-	  	</h4>
+	  		<h4>With kind regards,</br>Nicole P.</h4>
 		</div>
 	</div>
-  </div>
+	<div class="brighttheme">
+		<h2>Experience</h2>
+		<p></p>
+	</div>
+	<footer>
+		<p></p>
+	</footer>
 </body>
+<script src="js/myScript.js"></script>
 </html> 
