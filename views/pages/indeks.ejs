@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div id="top" class="left">
-        <div id="logo"><% include ../partials/nplogo %></div>
+        <div id="logo"><% include ../pics/nplogo %></div>
         <div><h4>IT student - Nicole P.</h4></div>
     </div>
    	<div class="brighttheme clearfix left">
@@ -20,7 +20,7 @@
 		</div>
 		<div id="profile">
 			<div class="shadow">
-				<div id="myPic"><% include ../partials/profilePic %></div>
+				<div id="myPic"><% include ../pics/profilePic %></div>
 				<h2>Welcome, my name is Nicole!</h2>
 				<p class="mini">IT student</p>
 				<hr>
@@ -75,23 +75,35 @@
 			</table>
 		</div>
 	</div>
-  	<div class="container clearfix">
-		<img src="img/2017cebit.jpg" alt="2017cebit" width="100%" height="auto"/>
-		<div class="container-abs">
+  	<div class="clearfix">
 			<h2>Motivation</h2>
-      		<p>As the female representation in the IT world needed some increase, I thought it'd be nice to make some contribution to the universe and I started studying IT. Soon I found out, that it definitly was not the worst idea and wondered why I did not find out about it earlier (this is the short version of the story).</p> 
-			<p>I learned to fight with frameworks like Apache Cocoon and finally produced quick solutions with node.js and docker. The jungle of solutions has a very wide range and I am happy to take part in more IT-adventures. If you have some exciting challenge, do not hesitate to tell me about it! I love learning and I am looking forward to some new challenges.</p>
-			<p>Not only the different, interesting IT fields, which drew my intention, motivate my work, but the people, who fill the IT world with life. Therefore I would like to thank all IT role models, especially my friends and university teachers, plus event organisers. Additonally I would like to give thanks to the authors of fruitful books and websites, as well as to the producers of educating or problem solving videos.</br>Great thanks!!!</p>
-	  		<h4>With kind regards,</br>Nicole P.</h4>
-		</div>
+			<div>
+				<% include ../pics/circle %>
+				<p>increase female representation in the IT world</p>
+			</div>
+			<div>
+				<% include ../pics/circle %>
+				<p>I love learning and I am looking forward to some new challenges in the IT jungle.</p>
+			</div>
+			<div>
+				<% include ../pics/circle %>
+				<p>I love learning and I am looking forward to some new challenges in the IT jungle.</p>
+			</div>
+			<div>
+				<% include ../pics/circle %>
+				<p>Thank you! All people, who fill the IT world with life. Especially my family, friends and university teachers, plus event organisers. Authors of fruitful books and websites, producers of educating or problem solving videos.
+				</br>Great thanks!!!</p>
+			</div>
 	</div>
 	<div class="brighttheme">
 		<h2>Experience</h2>
-		<p></p>
+		<p>
+		<% exps.forEach(function (exp) { %> 
+		<span><%= exp %></span>
+		<% }) %>
+		</p>
 	</div>
-	<footer>
-		<p></p>
-	</footer>
+	<% include ../partials/footer %>
 </body>
 <script src="js/myScript.js"></script>
 </html> 

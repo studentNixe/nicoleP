@@ -58,20 +58,8 @@ text-align: center;
 margin-top: 10px;
 }
 
-.container{
-position: relative;
-text-align: center;
-}
-
 h4{
 padding-left: 15px;
-}
-
-.container-abs{
-position: absolute;
-top: 0px;
-width: 85%;
-left:8%;
 }
 
 #top {
@@ -156,7 +144,7 @@ padding: 5%;
 #myPic svg{
 width: 60%;
 border-radius: 7em;
-background: #efefef;
+border: 0.5px solid #efefef;
 transform: rotate(-5deg);
 }
 
@@ -173,5 +161,11 @@ margin-left: auto;
 margin-right: auto;
 }
 
-
+/*colours
+#4e5d73
+#4e5d73
+#1e676d
+#00897b
+#05090e
+*/
 
