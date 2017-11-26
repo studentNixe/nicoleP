@@ -155,6 +155,16 @@ font-size: 133%;
 letter-spacing: -1px;
 }
 
+#motiv div{
+float: left;
+min-width: 200px;
+width: 30%;
+padding: 5px;
+}
+
+#motiv svg{
+    max-width: 300px;
+}
 img{
 max-width: 450px;
 margin-left: auto;
