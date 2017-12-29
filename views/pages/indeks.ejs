@@ -1,100 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8"/>
-	<title>Nicole P. IT Student</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css" />
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Nicole IT Student</title>
+	<!--Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
 </head>
 <body>
-	<div id="top" class="left">
-        <div id="logo"><% include ../pics/nplogo %></div>
-        <div><h4>IT student - Nicole P.</h4></div>
-    </div>
-   	<div class="brighttheme clearfix left">
-		<div id="menue" class="left">
-			<div class="shadow buttn"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></div>
-			<div class="shadow buttn"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
-			<div class="shadow buttn"><a href="#"><i class="fa fa-terminal" aria-hidden="true"></i></a></div>
-			<div class="shadow buttn"><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i></a></div>
+	<div id="top" class="darktheme contain">
+		<div class="row">
+        <div id="logo" class="col-sm-3"><% include ../pics/nplogo %></div>
+        <div class="col-sm-9"><h4>IT student - Nicole</h4></div>
 		</div>
-		<div id="profile">
-			<div class="shadow">
-				<div id="myPic"><% include ../pics/profilePic %></div>
-				<h2>Welcome, my name is Nicole!</h2>
-				<p class="mini">IT student</p>
-				<hr>
-				<p>One of my great passions is to experience the world of IT.</p>
+  </div><!-- top -->
+	<div id="welcome" class="brighttheme contain">
+   	<div class="row">
+			<div id="menue" class="col-sm-3">
+				<!--  glyphicons bootstrap-->
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="shadow buttn"><a href="#"><span class="glyphicon glyphicon-home"></span></a></div>
+					</div>
+					<div class="col-xs-6">
+						<div class="shadow buttn bluetheme"><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="shadow buttn bluetheme"><a href="#"><span class="glyphicon glyphicon-console"></span></a></div>
+					</div>
+					<div class="col-xs-6">
+						<div class="shadow buttn"><a href="#"><span class="glyphicon glyphicon-picture"></span></a></div>
+					</div>
+				</div>
 			</div>
-			<p>
-				<span><i class="fa fa-cogs" aria-hidden="true"></i></span>
-				<strong> This website is still in the stage of development.</strong>
-			</p>
+			<div id="profile" class="col-sm-5">
+				<div class="shadow">
+					<div id="myPic"><% include ../pics/profilePic %></div>
+					<h2>Welcome, my name is Nicole!</h2>
+					<p class="mini">IT student</p>
+					<hr>
+					<p>One of my great passions is to experience the world of IT.</p>
+				</div>
+				<p>
+					<span><i class="fa fa-cogs" aria-hidden="true"></i></span>
+					<strong> This website is still in the stage of development.</strong>
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<table class="table table-borderless shadow">
+					<tr>
+						<th></th><th>Profile</th>
+					</tr>
+					<tr>
+						<td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+						<td>IT student (Bachelor)</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-home" aria-hidden="true"></i></td>
+						<td>Bremen, Germany</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-envelope-o" aria-hidden="true"></i></td>
+						<td><a href="mailto:mail.nicole.p.it@protonmail.com">mail.nicole.p.it@protonmail.com</a></td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-id-card-o" aria-hidden="true"></i></td>
+						<td>German</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-venus" aria-hidden="true"></i></td>
+						<td>female</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-globe" aria-hidden="true"></i></td>
+						<td>German, English, Polish, French, Russian</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-paint-brush" aria-hidden="true"></i></td>
+						<td>creative, cheerful, curious</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
+						<td>fighting, fitness, dancing, drawing</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-wrench" aria-hidden="true"></i></td>
+						<td>project family tree,</br>internship Daimler Bremen(Projectmanagement),</br>learning Chinese</td>
+					</tr>
+				</table>
+			</div>
+		</div><!-- row -->
+	</div><!-- welcome -->
+	<div id="motiv" class="darktheme contain">
+		<div class="row">
+			<div class="col-sm-12"><h2>Motivation</h2></div>
 		</div>
-		<div>
-			<table class="shadow">
-				<tr>
-					<th></th><th>Profile</th>
-				</tr>
-				<tr>
-					<td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
-					<td>IT student (Bachelor)</td>
-				</tr>
-				<tr>
-					<td><i class="fa fa-home" aria-hidden="true"></i></td>
-					<td>Bremen, Germany</td>
-				</tr>
-				<tr>
-					<td><i class="fa fa-envelope-o" aria-hidden="true"></i></td>
-					<td><a href="mailto:mail.nicole.p.it@protonmail.com">mail.nicole.p.it@protonmail.com</a></td>
-				</tr>
-				<tr>
-					<td><i class="fa fa-id-card-o" aria-hidden="true"></i></td>
-					<td>German</td>
-				</tr>
-				<tr>
-					<td><i class="fa fa-venus" aria-hidden="true"></i></td>
-					<td>female</td>
-				</tr>
-				<tr>
-					<td><i class="fa fa-globe" aria-hidden="true"></i></td>
-					<td>German, English, Polish, French, Russian</td>
-				</tr>
-				<tr>
-					<td><i class="fa fa-paint-brush" aria-hidden="true"></i></td>
-					<td>creative, cheerful, curious</td>
-				</tr>
-				<tr>
-					<td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
-					<td>fighting, fitness, dancing, drawing</td>
-				</tr>
-				<tr>
-					<td><i class="fa fa-wrench" aria-hidden="true"></i></td>
-					<td>project family tree,</br>internship Daimler Bremen(Projectmanagement),</br>learning Chinese</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-  	<div id="motiv" class="clearfix">
-			<h2>Motivation</h2>
-			<div>
-				<% include ../pics/femme %>
-				<p>increase female representation in the IT world</p>
-			</div>
-			<div>
-				<% include ../pics/jungle %>
-				<p>I love learning and I am looking forward to some new challenges in the IT jungle.</p>
-			</div>
-			<div>
-				<% include ../pics/circle %>
+		<div class="row">
+			<div class="col-sm-4"><% include ../pics/jungle %></div>
+			<div class="col-sm-6">
+				<p>I love learning and I am looking forward to some new challenges in the IT jungle. In my opinion the IT-world needs some more creative, female solutions and I would like to give my contribution </p>
 				<p>Thank you! All people, who fill the IT world with life. Especially my family and friends. Also university teachers, event organisers, authors of fruitful books and websites, producers of educating or problem solving videos.
 				</br>Great thanks!!!</p>
 			</div>
+		</div>
 	</div>
-	<div class="brighttheme clearfix">
+	<div class="brighttheme contain">
 		<h2>Experience</h2>
 		<p>
-		<% exps.forEach(function (exp) { %> 
+		<% exps.forEach(function (exp) { %>
 		<span><%= exp %></span>
 		<% }) %>
 		</p>
@@ -102,4 +119,4 @@
 	<% include ../partials/footer %>
 </body>
 <script src="js/myScript.js"></script>
-</html> 
+</html>

@@ -12,7 +12,7 @@ app.use(bodyparser.urlencoded({ extended: true }));
 // public directory
 app.use(express.static('./assets'));
 
-// link 2 index page 
+// link 2 index page
 app.get('/', function(req, res){
     res.render('pages/indeks',{
         exps
@@ -25,6 +25,3 @@ app.listen(8080, (err) => {
     }
   console.log(`Nicole is listening...`);
 });
-
-
-

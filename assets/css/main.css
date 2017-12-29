@@ -3,16 +3,19 @@ margin: 0px;
 padding: 0px;
 font-size: 100%;
 font-family:  Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
-background: #05090e;
-color: #506070;
 }
 
 div {
 margin: 0px;
 padding: 0px;
 }
-a{
+
+a, a span{
 color:#05090e;
+}
+
+hr{
+color:rgb(5,9,14);
 }
 
 svg{
@@ -28,14 +31,6 @@ text-align: center;
 font-size: 80%;
 }
 
-.left div{
-float:left;
-}
-
-.clearfix{
-clear: both;
-}
-
 .brighttheme{
 background: #dedede;
 background: linear-gradient(#ababab 2%,#dedede 10%, #dedede 90%, #ababab);
@@ -44,18 +39,22 @@ padding: 15px;
 overflow: hidden;
 }
 
+.darktheme{
+  background: #05090e;
+  color: #506070;
+}
+
 .shadow{
 box-shadow:0 2px 5px 0 rgba(5,9,14,0.5),0 2px 10px 0 rgba(5,9,14,0.6);
 }
 
 .buttn{
-width: 100px;
-height: 100px;
-border-radius: 3em;
-margin-right: 10px;
+width: 80px;
+height: 80px;
+margin: 10px;
+border-radius: 2.5em;
 background: #1e676d;
 text-align: center;
-margin-top: 10px;
 }
 
 h4{
@@ -71,50 +70,48 @@ padding: 0px;
 width: 180px;
 }
 
+@media screen and (min-width: 768px) {
+#welcome{
+background-image:url("../img/workplace3BWm.JPG");
+background-size: 100% auto;
+background-repeat: no-repeat;
+}
+}
 
 #menue{
 max-width: 300px;
 padding-left: 15px;
 padding-bottom: 15px;
-font-size: 400%;
+font-size: 300%;
 }
 
-#menue i{
- padding-top: 15px;
+#menue a span{
+ padding-top: 20px;
 }
 
-#menue div:nth-child(2){
+.bluetheme{
 background: #4e5d73;
 }
-
-#menue div:nth-child(3){
-background: #4e5d73;
-}
-
 
 table{
-width: 90%;
-margin-top:20px;
-margin-bottom: 20px;
 border-radius: 0.5em;
-background: #4e5d73;
+background: rgba(222,222,222,0.8) !important;
 transform: rotate(3deg);
+border-style: none;
 }
 
 table:hover{
 transform: rotate(0deg);
 }
 
-th{
-text-align:left;
-padding-left: 15px;
-padding-bottom: 10px;
-font-size: 120%;
+.table-borderless,
+.table-borderless th,
+.table-borderless td{
+    border: none !important;
 }
 
-td{
-padding: 4px 15px;
-vertical-align: top;
+th{
+font-size: 120%;
 }
 
 tr td:first-child{
@@ -122,18 +119,19 @@ font-size: 150%;
 }
 
 #profile{
-width: 300px;
+max-width: 300px;
 padding: 5px 15px;
 margin-right: 25px;
 text-align: center;
 }
 
-#profile>div {    
+#profile>div {
 padding-left: 5%;
 padding-right: 5%;
 padding-top: 10%;
+padding-bottom: 3%;
 border-radius: 1em;
-background: #dedede;
+background: rgba(222,222,222,0.8);
 margin-bottom: 20px;
 }
 
@@ -155,13 +153,6 @@ font-size: 133%;
 letter-spacing: -1px;
 }
 
-#motiv div{
-float: left;
-min-width: 200px;
-width: 30%;
-padding: 5px;
-}
-
 #motiv svg{
     max-width: 300px;
 }
@@ -178,4 +169,3 @@ margin-right: auto;
 #00897b
 #05090e
 */
-
