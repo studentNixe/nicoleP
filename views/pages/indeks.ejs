@@ -1,111 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>Nicole IT Student</title>
-	<!--Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/main.css" />
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-</head>
+<% include ../partials/head %>
 <body>
-	<div id="top" class="darktheme contain">
-		<div class="row">
-        <div id="logo" class="col-sm-3"><% include ../pics/nplogo %></div>
-        <div class="col-sm-9"><h4>IT student - Nicole</h4></div>
-		</div>
-  </div><!-- top -->
+	<% include ../partials/top %>
 	<div id="welcome" class="brighttheme contain">
-   	<div class="row">
-			<div id="menue" class="col-sm-3">
-				<!--  glyphicons bootstrap-->
-				<div class="row">
-					<div class="col-xs-6">
-						<div class="shadow buttn"><a href="#"><span class="glyphicon glyphicon-home"></span></a></div>
+		<div class="row">
+				<div class="col-sm-8">
+					<div id="profile">
+					<div class="shadow">
+						<div id="myPic"><% include ../pics/profilePic %></div>
+						<h2>Welcome, my name is Nicole!</h2>
+						<p class="mini">IT student</p>
+						<hr>
+						<p>One of my great passions is to experience the world of IT.</p>
 					</div>
-					<div class="col-xs-6">
-						<div class="shadow buttn bluetheme"><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></div>
-					</div>
+					<p>
+						<span><i class="fa fa-cogs" aria-hidden="true"></i></span>
+						<strong> This website is still in the stage of development.</strong>
+					</p>
 				</div>
-				<div class="row">
-					<div class="col-xs-6">
-						<div class="shadow buttn bluetheme"><a href="#"><span class="glyphicon glyphicon-console"></span></a></div>
-					</div>
-					<div class="col-xs-6">
-						<div class="shadow buttn"><a href="#"><span class="glyphicon glyphicon-picture"></span></a></div>
-					</div>
-				</div>
-			</div>
-			<div id="profile" class="col-sm-5">
-				<div class="shadow">
-					<div id="myPic"><% include ../pics/profilePic %></div>
-					<h2>Welcome, my name is Nicole!</h2>
-					<p class="mini">IT student</p>
-					<hr>
-					<p>One of my great passions is to experience the world of IT.</p>
-				</div>
-				<p>
-					<span><i class="fa fa-cogs" aria-hidden="true"></i></span>
-					<strong> This website is still in the stage of development.</strong>
-				</p>
-			</div>
-			<div class="col-sm-4">
-				<table class="table table-borderless shadow">
-					<tr>
-						<th></th><th>Profile</th>
-					</tr>
-					<tr>
-						<td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
-						<td>IT student (Bachelor)</td>
-					</tr>
-					<tr>
-						<td><i class="fa fa-home" aria-hidden="true"></i></td>
-						<td>Bremen, Germany</td>
-					</tr>
-					<tr>
-						<td><i class="fa fa-envelope-o" aria-hidden="true"></i></td>
-						<td><a href="mailto:mail.nicole.p.it@protonmail.com">mail.nicole.p.it@protonmail.com</a></td>
-					</tr>
-					<tr>
-						<td><i class="fa fa-id-card-o" aria-hidden="true"></i></td>
-						<td>German</td>
-					</tr>
-					<tr>
-						<td><i class="fa fa-venus" aria-hidden="true"></i></td>
-						<td>female</td>
-					</tr>
-					<tr>
-						<td><i class="fa fa-globe" aria-hidden="true"></i></td>
-						<td>German, English, Polish, French, Russian</td>
-					</tr>
-					<tr>
-						<td><i class="fa fa-paint-brush" aria-hidden="true"></i></td>
-						<td>creative, cheerful, curious</td>
-					</tr>
-					<tr>
-						<td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
-						<td>fighting, fitness, dancing, drawing</td>
-					</tr>
-					<tr>
-						<td><i class="fa fa-wrench" aria-hidden="true"></i></td>
-						<td>project family tree,</br>internship Daimler Bremen(Projectmanagement),</br>learning Chinese</td>
-					</tr>
-				</table>
-			</div>
-		</div><!-- row -->
+				</div><!-- col 8 -->
+				<div class="col-sm-4">
+						<table class="table table-borderless shadow">
+							<tr>
+								<th></th><th>Profile</th>
+							</tr>
+							<tr>
+								<td><i class="fa fa-briefcase" aria-hidden="true"></i></td>
+								<td>IT student (Bachelor)</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-home" aria-hidden="true"></i></td>
+								<td>Bremen, Germany</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-envelope-o" aria-hidden="true"></i></td>
+								<td><a href="mailto:mail.nicole.p.it@protonmail.com">mail.nicole.p.it@protonmail.com</a></td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-id-card-o" aria-hidden="true"></i></td>
+								<td>German</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-venus" aria-hidden="true"></i></td>
+								<td>female</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-globe" aria-hidden="true"></i></td>
+								<td>German, English, Polish, French, Russian</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-paint-brush" aria-hidden="true"></i></td>
+								<td>creative, cheerful, curious</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
+								<td>fighting, fitness, dancing, drawing</td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-wrench" aria-hidden="true"></i></td>
+								<td>postgresql project: family tree,</br>java webapp with ninjaframework,</br>learning Chinese</td>
+							</tr>
+						</table>
+					</div><!-- col 12-->
+		</div><!--row -->
 	</div><!-- welcome -->
 	<div id="motiv" class="darktheme contain">
 		<div class="row">
-			<div class="col-sm-12"><h2>Motivation</h2></div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4"><% include ../pics/jungle %></div>
-			<div class="col-sm-6">
-				<p>I love learning and I am looking forward to some new challenges in the IT jungle. In my opinion the IT-world needs some more creative, female solutions and I would like to give my contribution </p>
-				<p>Thank you! All people, who fill the IT world with life. Especially my family and friends. Also university teachers, event organisers, authors of fruitful books and websites, producers of educating or problem solving videos.
+			<div class="col-sm-8">
+				<h2>Motivation</h2>
+				<p>The IT world develops faster than one person can follow. I may claim that it is the biggest area from which not only many fields evolved, but which melted with so many others. It has a great impact on our lives and has changed so many things in such a short time.
+					<br>I remember about 1995 when my father has brought a computer home, with which we used to play games. It must have been the Amiga 500. There was a fat monitor with a small display, a gigantic keyboard, a floppy disk reader, a big mouse and even a joystick. I can also remember painting with an editor. As there were storage problems, you had to remember keywords, if you entered a new level in a game, to play the next day from the highest level you reached. When I was a child it was like magic to me!
+					<br>Now about 20 years later, I look at my smartphone and I know what seemed to me like magic then, is just a tiny sparkle compared to what we are capable today. Internet connection to the whole world and various types of gadgets, virtual reality games, robots who are artificial intelligent or cars driven by a computer! I am curious how the world will change and what kind of magic IT will come up with. I love learning and being creative, so I am looking forward to some challenges in the wide IT jungle.
+					</p>
+				<p>Thank you, to all people, who fill the IT world with life! Especially my family and friends. Also university teachers, event organisers, authors of fruitful books and websites, producers of educating or problem solving videos. Developers, mathematicians, engineers, who wrote the history of IT!
 				</br>Great thanks!!!</p>
 			</div>
+			<div class="col-sm-4"><% include ../pics/jungle %></div>
 		</div>
 	</div>
 	<div class="brighttheme contain">

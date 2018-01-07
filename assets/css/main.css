@@ -48,6 +48,10 @@ overflow: hidden;
 box-shadow:0 2px 5px 0 rgba(5,9,14,0.5),0 2px 10px 0 rgba(5,9,14,0.6);
 }
 
+.shadow-bright{
+box-shadow:0 2px 5px 0 rgba(224,224,224,0.5),3px 2px 10px 0 rgba(224,224,224,0.4);
+}
+
 .buttn{
 width: 80px;
 height: 80px;
@@ -67,19 +71,18 @@ padding: 0px;
 }
 
 #logo{
+padding-top: 5px;
 width: 180px;
 }
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {*/
 #welcome{
-background-image:url("../img/workplace3BWm.JPG");
-background-size: 100% auto;
-background-repeat: no-repeat;
+background: #ffffff url("../img/workplace3BWm.JPG") no-repeat left top;
+background-size: cover;
 }
-}
+/*}*/
 
 #menue{
-max-width: 300px;
 padding-left: 15px;
 padding-bottom: 15px;
 font-size: 300%;
@@ -95,8 +98,8 @@ background: #4e5d73;
 
 table{
 border-radius: 0.5em;
-background: rgba(222,222,222,0.8) !important;
-transform: rotate(3deg);
+background: rgba(222,222,222,0.7) !important;
+transform: rotate(2deg);
 border-style: none;
 }
 
@@ -119,9 +122,11 @@ font-size: 150%;
 }
 
 #profile{
-max-width: 300px;
+width: 70%;
+max-width: 350px;
+min-width: 250px;
 padding: 5px 15px;
-margin-right: 25px;
+margin: 0 auto;
 text-align: center;
 }
 
@@ -131,7 +136,7 @@ padding-right: 5%;
 padding-top: 10%;
 padding-bottom: 3%;
 border-radius: 1em;
-background: rgba(222,222,222,0.8);
+background: rgba(222,222,222,0.7);
 margin-bottom: 20px;
 }
 
@@ -154,8 +159,14 @@ letter-spacing: -1px;
 }
 
 #motiv svg{
-    max-width: 300px;
+    padding: 10px 0;
+    max-width: 280px;
 }
+
+#motiv{
+text-align: center;
+}
+
 img{
 max-width: 450px;
 margin-left: auto;
