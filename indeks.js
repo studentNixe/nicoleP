@@ -3,7 +3,11 @@ const express = require('express');
 const app = express();
 const bodyparser = require('body-parser');
 
-const exps = ["java","mongodb","git","svg","mysql","docker","javascript"];
+const exps = ["Linux","Java","Ninja Framework","Android Studio","Gesture Builder",
+"Java Server Faces","Git","Docker","Svg","Inkscape","GIMP","CSS","Bootstrap",
+"Postgresql","MySQL","MongoDB","Javascript","Node.js","C","C++","Qt","Python","Wordpress","Woocommerce",
+"XML","XSLT","Cocoon","MS Project","Project management","EPM@Daimler","houstonIT","MS Sharepoint","MS Excel","MS Word","MS Outlook",
+"MS Powerpoint","Libre Office","Customer Service","Mentoring","Translating"];
 
 // set view
 app.set('view engine', 'ejs');
@@ -23,5 +27,5 @@ app.listen(8080, (err) => {
     if (err) {
         return console.error(err);
     }
-  console.log(`Nicole is listening...`);
+  console.log(`Nicole P. is listening...`);
 });

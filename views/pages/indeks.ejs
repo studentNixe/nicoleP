@@ -21,7 +21,7 @@
 				</div>
 				</div><!-- col 8 -->
 				<div class="col-sm-4">
-						<table class="table table-borderless shadow">
+						<table class="table table-responsive table-borderless shadow">
 							<tr>
 								<th></th><th>Profile</th>
 							</tr>
@@ -35,7 +35,7 @@
 							</tr>
 							<tr>
 								<td><i class="fa fa-envelope-o" aria-hidden="true"></i></td>
-								<td><a href="mailto:mail.nicole.p.it@protonmail.com">mail.nicole.p.it@protonmail.com</a></td>
+								<td><a class="robo-green" href="mailto:mail.nicole.p.it@protonmail.com">mail.nicole.p.it@protonmail.com</a></td>
 							</tr>
 							<tr>
 								<td><i class="fa fa-id-card-o" aria-hidden="true"></i></td>
@@ -55,7 +55,7 @@
 							</tr>
 							<tr>
 								<td><i class="fa fa-puzzle-piece" aria-hidden="true"></i></td>
-								<td>fighting, fitness, dancing, drawing</td>
+								<td>martials arts, fitness, dance workouts, singing karaoke, playing piano, crochet</td>
 							</tr>
 							<tr>
 								<td><i class="fa fa-wrench" aria-hidden="true"></i></td>
@@ -65,27 +65,32 @@
 					</div><!-- col 12-->
 		</div><!--row -->
 	</div><!-- welcome -->
-	<div id="motiv" class="darktheme contain">
+	<div class="darktheme">
 		<div class="row">
-			<div class="col-sm-8">
+			<div class="col-sm-8 container longtext">
 				<h2>Motivation</h2>
-				<p>The IT world develops faster than one person can follow. I may claim that it is the biggest area from which not only many fields evolved, but which melted with so many others. It has a great impact on our lives and has changed so many things in such a short time.
-					<br>I remember about 1995 when my father has brought a computer home, with which we used to play games. It must have been the Amiga 500. There was a fat monitor with a small display, a gigantic keyboard, a floppy disk reader, a big mouse and even a joystick. I can also remember painting with an editor. As there were storage problems, you had to remember keywords, if you entered a new level in a game, to play the next day from the highest level you reached. When I was a child it was like magic to me!
-					<br>Now about 20 years later, I look at my smartphone and I know what seemed to me like magic then, is just a tiny sparkle compared to what we are capable today. Internet connection to the whole world and various types of gadgets, virtual reality games, robots who are artificial intelligent or cars driven by a computer! I am curious how the world will change and what kind of magic IT will come up with. I love learning and being creative, so I am looking forward to some challenges in the wide IT jungle.
-					</p>
-				<p>Thank you, to all people, who fill the IT world with life! Especially my family and friends. Also university teachers, event organisers, authors of fruitful books and websites, producers of educating or problem solving videos. Developers, mathematicians, engineers, who wrote the history of IT!
+				<p>I remember about 1995 when my father brought a computer home, with which we used to play games. It must have been the Amiga 500. There was a big monitor with a very small display, a gigantic keyboard, a floppy disk reader, a big mouse and even a joystick. As there were storage problems, you had to remember keywords, if you entered a new level in a game, to play the next day from the highest level you reached. When I was a child, it seemed like magic to me!
+				</p>
+				<p>Now about 20 years later, I look at my smartphone and what was magic then, is just a tiny sparkle compared to what we are capable today. We have fast internet connection to almost the whole world and virtual reality games, artificial intelligent robots or cars driven by a computer! I am curious how the world will change and what kind of magic IT will come up with. I love learning and being creative, so I am looking forward to some challenges in the wide IT jungle.
+				</p>
+				<p>Thank you, to all people, who fill the IT world with life! Especially my family and friends. Also teachers, tutors, event organisers, authors of fruitful books and websites, producers of educating or problem solving videos. Developers, mathematicians, engineers, who wrote the history of IT!
 				</br>Great thanks!!!</p>
 			</div>
-			<div class="col-sm-4"><% include ../pics/jungle %></div>
+			<div class="col-sm-4b story"><% include ../pics/jungle %></div>
 		</div>
 	</div>
-	<div class="brighttheme contain">
-		<h2>Experience</h2>
-		<p>
-		<% exps.forEach(function (exp) { %>
-		<span><%= exp %></span>
-		<% }) %>
-		</p>
+	<div class="brighttheme">
+		<div class="row">
+			<div class="col-sm-8 container longtext">
+				<h2>Experience</h2>
+				<p id="experience">
+				<% exps.forEach(function (exp) { %>
+				<span><%= exp %></span>
+				<% }) %>
+				</p>
+			</div>
+			<div class="col-sm-4 center story"><% include ../pics/working %></div>
+		</div>
 	</div>
 	<% include ../partials/footer %>
 </body>
