@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ../partials/head %>
+<body>
+	<% include ../partials/top %>
+	<div class="brighttheme contain">
+		<% pics.forEach(function (pic) {  %>
+		<div>
+			<img src='galeria/<%= pic[0] %>'class="img-rounded img-responsive" />
+			<p><%= pic[1] %> </p>
+		</div>
+		<% }) %>
+	</div>
+	<% include ../partials/footer %>
+</body>
+<script src="js/myScript.js"></script>
+</html>
